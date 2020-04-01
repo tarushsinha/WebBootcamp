@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+
+	<h1>Register</h1>
+	<form action="pokemon.html">
+		<!-- Name -->
+		<div>
+			<label>
+				First Name:
+				<input type="text" name="firstName" placeholder="John" required>
+			</label>
+			<label>
+				Last Name:
+				<input type="text" name="lastName" placeholder="Smith" required>
+			</label>
+		</div>
+		<!-- Gender -->
+		<div>
+			<label>
+				Male:
+				<input type="radio" name="Gender" value="Male">
+			</label>
+			<label>
+				Female:
+				<input type="radio" name="Gender" value="Female">
+			</label>
+			<label>
+				Other:
+				<input type="radio" name="Gender" value="Other">
+			</label>
+		</div>
+		<!-- Email & Pass -->
+		<div>
+			<label>
+				Email:
+				<input type="email" name="email" placeholder="your email" required>
+			</label>
+			<label>
+				Password:
+				<input type="password" name="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+			</label>
+		</div>
+		<!-- Birthday -->
+		<div>
+			<label>
+				Birthday:
+				<select name="birthday_month">
+					<option value="none" hidden>Month</option>
+					<option value="Jan">Jan</option>
+					<option value="Feb">Feb</option>
+					<option value="Mar">Mar</option>
+					<option value="Apr">Apr</option>
+					<option value="May">May</option>
+					<option value="Jun">Jun</option>
+					<option value="Jul">Jul</option>
+					<option value="Aug">Aug</option>
+					<option value="Sep">Sep</option>
+					<option value="Oct">Oct</option>
+					<option value="Nov">Nov</option>
+					<option value="Dec">Dec</option>
+				</select>
+				<select name="birthday_day">
+					<option value="none" hidden>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+				<select name="birthday_year">
+					<option value="none" hidden>Year</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+				</select>
+			</label>
+		</div>
+		<!-- Terms & Conds -->
+		<div>
+			<label>
+				I agree to the terms and conditions
+				<input name="agreed" type="checkbox">
+			</label>
+		</div>
+		<button>Submit</button>
+	</form>
+
+</body>
+</html>
